@@ -5,5 +5,5 @@ tags={
 dependencies={
 	"The-Atomic-Age"
 }
-name="The-New-Order-Goebbels-sub-mod"
+name="The New Order: Goebbels sub mod"
 supported_version="1.12.7"
