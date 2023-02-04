@@ -1,0 +1,629 @@
+﻿############################
+##      Goebbels Events      ##
+############################
+
+add_namespace = Goebbels
+
+
+country_event = { #Joseph Goebbels intro
+	id = Goebbels.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Goebbels.1" }
+	title = Goebbels.1.t
+	desc = Goebbels.1.desc
+	picture = GFX_Joseph_Goebbels_intro
+
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = Goebbels.1.a
+		ai_chance = { factor = 1 }
+
+	}
+}
+
+country_event = { 
+	id = Goebbels.10
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Goebbels.10" }
+	title = Goebbels.10.t
+	desc = Goebbels.10.desc
+	picture = GFX_Joseph_Goebbels_speech
+
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = Goebbels.10.a
+		
+		country_event = {
+			id = Goebbels.11 days = 0
+		}
+	}
+}
+
+country_event = { 
+	id = Goebbels.11
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Goebbels.11" }
+	title = Goebbels.11.t
+	desc = Goebbels.11.desc
+	picture = GFX_Joseph_Goebbels_speech
+
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = Goebbels.11.a
+		
+		country_event = {
+			id = Goebbels.11 days = 0
+		}
+	}
+}
+
+country_event = { 
+	id = Goebbels.20
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Goebbels.20" }
+	title = Goebbels.20.t
+	desc = Goebbels.20.desc
+	picture = GFX_sad_person
+
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = Goebbels.20.a
+		
+	}
+}
+
+country_event = { 
+	id = Goebbels.30
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Goebbels.30" }
+	title = Goebbels.30.t
+	desc = Goebbels.30.desc
+	picture = GFX_martin_bormann_intro
+
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = Goebbels.30.a
+		
+	}
+}
+
+country_event = { 
+	id = Goebbels.40
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Goebbels.40" }
+	title = Goebbels.40.t
+	desc = Goebbels.40.desc
+	picture = GFX_Hermann_goering_intro
+
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = Goebbels.40.a
+		
+	}
+}
+
+country_event = { 
+	id = Goebbels.50
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Goebbels.50" }
+	title = Goebbels.50.t
+	desc = Goebbels.50.desc
+	picture = GFX_albert_speer_intro
+
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = Goebbels.50.a
+		
+	}
+}
+
+country_event = { 
+	id = Goebbels.60
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Goebbels.60" }
+	title = Goebbels.60.t
+	desc = Goebbels.60.desc
+	picture = GFX_heydrich_outro_5
+
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = Goebbels.60.a
+		
+	}
+}
+
+country_event = { 
+	id = Goebbels.70
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Goebbels.70"}
+	title = Goebbels.70.t
+	desc = Goebbels.70.desc
+	picture = GFX_Eden_expulsion
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = Goebbels.70.a
+
+	}
+}
+
+country_event = { 
+	id = Goebbels.80
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Goebbels.80"}
+	title = Goebbels.80.t
+	desc = Goebbels.80.desc
+	picture = GFX_Joseph_Goebbels_workers
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = Goebbels.80.a
+
+		country_event = {
+			id = Goebbels.81 days = 0
+		}
+	}
+}
+
+country_event = { 
+	id = Goebbels.81
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Goebbels.81"}
+	title = Goebbels.81.t
+	desc = Goebbels.81.desc
+	picture = GFX_Joseph_Goebbels_workers
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = Goebbels.81.a
+
+		country_event = {
+			id = Goebbels.82 days = 0
+		}
+	}
+}
+
+country_event = { 
+	id = Goebbels.82
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Goebbels.82"}
+	title = Goebbels.82.t
+	desc = Goebbels.82.desc
+	picture = GFX_Joseph_Goebbels_workers
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = Goebbels.82.a
+
+		country_event = {
+			id = Goebbels.83 days = 0
+		}
+	}
+}
+
+country_event = { 
+	id = Goebbels.83
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Goebbels.83"}
+	title = Goebbels.83.t
+	desc = Goebbels.83.desc
+	picture = GFX_Joseph_Goebbels_workers
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = Goebbels.83.a
+
+	}
+}
+
+country_event = { 
+	id = Goebbels.90
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Goebbels.90"}
+	title = Goebbels.90.t
+	desc = Goebbels.90.desc
+	picture = GFX_german_utopia
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = Goebbels.90.a
+
+	}
+}
+
+country_event = { 
+	id = Goebbels.100
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Goebbels.100"}
+	title = Goebbels.100.t
+	desc = Goebbels.100.desc
+	picture = GFX_Joseph_Goebbels_speech
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = Goebbels.100.a
+
+		country_event = {
+			id = Goebbels.101 days = 0
+		}
+	}
+}
+
+country_event = { 
+	id = Goebbels.101
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Goebbels.101"}
+	title = Goebbels.101.t
+	desc = Goebbels.101.desc
+	picture = GFX_Joseph_Goebbels_speech
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = Goebbels.101.a
+
+	}
+}
+
+country_event = { 
+	id = Goebbels.110
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Goebbels.110"}
+	title = Goebbels.110.t
+	desc = Goebbels.110.desc
+	picture = GFX_Joseph_Goebbels_intro
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = Goebbels.110.a
+
+	}
+}
+
+country_event = { 
+	id = Goebbels.120
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Goebbels.120"}
+	title = Goebbels.120.t
+	desc = Goebbels.120.desc
+	picture = GFX_Joseph_Goebbels_speech
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = Goebbels.120.a
+
+	}
+}
+
+country_event = { 
+	id = Goebbels.130
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Goebbels.130"}
+	title = Goebbels.130.t
+	desc = Goebbels.130.desc
+	picture = GFX_dead_hero_wins
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = reich.2130.a
+
+		country_event = {
+			id = Goebbels.131 days = 0
+		}
+	}
+}
+
+country_event = { 
+	id = Goebbels.131
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Goebbels.1311"}
+	title = Goebbels.131.t
+	desc = Goebbels.131.desc
+	picture = GFX_mad_knight_wins
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = Goebbels.131.a
+
+		country_event = {
+			id = Goebbels.132 days = 0
+		}
+	}
+}
+
+country_event = { 
+	id = Goebbels.132
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Goebbels.132"}
+	title = Goebbels.132.t
+	desc = Goebbels.132.desc
+	picture = GFX_hero_in_mind_wins
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = Goebbels.132.a
+	}
+}
+
+country_event = { 
+	id = Goebbels.140
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Goebbels.140"}
+	title = Goebbels.140.t
+	desc = Goebbels.140.desc
+	picture = GFX_eat_man
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = Goebbels.140.a
+
+		country_event = {
+			id = Goebbels.141 days = 0
+		}
+	}
+}
+
+country_event = { 
+	id = Goebbels.141
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Goebbels.141"}
+	title = Goebbels.141.t
+	desc = Goebbels.141.desc
+	picture = GFX_little_light
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = Goebbels.141.a
+
+		country_event = {
+			id = Goebbels.142 days = 0
+		}
+	}
+}
+
+country_event = { 
+	id = Goebbels.142
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Goebbels.142"}
+	title = Goebbels.142.t
+	desc = Goebbels.142.desc
+	picture = GFX_heavenly_faith
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = Goebbels.142.a
+
+		country_event = {
+			id = Goebbels.143 days = 0
+		}
+	}
+}
+
+country_event = { 
+	id = Goebbels.143
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Goebbels.143"}
+	title = Goebbels.143.t
+	desc = Goebbels.143.desc
+	picture = GFX_god_hitler
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = Goebbels.143.a
+
+	}
+}
+
+country_event = { #Goebbels Wins GCW
+	id = Goebbels.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Goebbels.2" }
+	title = Goebbels.2.t
+	desc = Goebbels.2.desc
+	picture = GFX_report_event_Goebbels_wins
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = Goebbels.2.a
+		add_stability = 0.3
+		hidden_effect = {
+			every_country = { news_event = WORLD.2055 }
+			every_owned_state = {
+				set_temp_variable = { temp_state_value_addition = 0.25 }
+				econ_state_value_change_addition_specified_state = yes
+			}
+			add_dynamic_modifier = {
+				modifier = GER_SGR_tax_cuts_dynamic_modifier
+			}
+			every_country = { # dismantles the German economic sphere
+				if = {
+					limit = {
+						check_variable = { ECON_SPHERE_LEADER = GER }
+						NOT = {
+							tag = GER
+						}
+					}
+					clear_variable = ECON_SPHERE_LEADER
+				}
+			}
+			SGR_project_initialize = yes
+		}
+	}
+}
+
+country_event = { 
+	id = Goebbels.200
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Goebbels.200"}
+	title = Goebbels.200.t
+	desc = Goebbels.200.desc
+	picture = GFX_cruel_justice
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = Goebbels.200.a
+
+	}
+}
+
+country_event = { 
+	id = Goebbels.220
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Goebbels.220"}
+	title = Goebbels.220.t
+	desc = Goebbels.220.desc
+	picture = GFX_conflict_mind
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = Goebbels.220.a
+
+	}
+}
+
+country_event = { 
+	id = Goebbels.220
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Goebbels.220"}
+	title = Goebbels.220.t
+	desc = Goebbels.220.desc
+	picture = GFX_jew_hate
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = Goebbels.220.a
+
+	}
+}
+
+country_event = { 
+	id = Goebbels.230
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Goebbels.230"}
+	title = Goebbels.230.t
+	desc = Goebbels.230.desc
+	picture = GFX_hitler_speech
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = Goebbels.230.a
+
+	}
+}
+
+country_event = { 
+	id = Goebbels.240
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Goebbels.240"}
+	title = Goebbels.240.t
+	desc = Goebbels.240.desc
+	picture = GFX_wish_list
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = Goebbels.240.a
+
+	}
+}
+
+country_event = { 
+	id = Goebbels.250
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Goebbels.250"}
+	title = Goebbels.250.t
+	desc = Goebbels.250.desc
+	picture = GFX_no_person
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = Goebbels.250.a
+
+	}
+}
+
+country_event = { 
+	id = Goebbels.260
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Goebbels.260"}
+	title = Goebbels.260.t
+	desc = Goebbels.260.desc
+	picture = GFX_Hjalmar_Schacht
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = Goebbels.260.a
+
+	}
+}
+
+country_event = { 
+	id = Goebbels.270
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Goebbels.270"}
+	title = Goebbels.270.t
+	desc = Goebbels.270.desc
+	picture = GFX_Hans_Speidel
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = Goebbels.270.a
+
+	}
+}
+
+country_event = { 
+	id = Goebbels.280
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Goebbels.280"}
+	title = Goebbels.280.t
+	desc = Goebbels.280.desc
+	picture = GFX_Baldur_Schirach
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = Goebbels.280.a
+
+	}
+}
