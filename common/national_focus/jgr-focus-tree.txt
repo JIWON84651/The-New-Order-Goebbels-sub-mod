@@ -1,6 +1,5 @@
-focus_tree = {
-	id = jgr-focus-tree-gcw
-	continuous_focus_position = { x = -40 y = 1050 } 
+shared_focus = {
+	id = jgr-focus-tree
 	country = {
 		factor = 0
 		modifier = {
@@ -273,4 +272,5 @@ shared_focus = {
 		country_event = {id = Goebbels.130 days = 5}			
 		add_political_power = 150
 	}
+}
 }
