@@ -1,0 +1,6 @@
+focus_tree = {
+	id = GER_Goebbels_successor
+	country = { factor = 0 }
+	default = no
+	shared_focus = GER_Goebbels
+}

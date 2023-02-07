@@ -1,12 +1,3 @@
-shared_focus = {
-	id = jgr-focus-tree
-	country = {
-		factor = 0
-		modifier = {
-			add = 10
-			tag = GER
-		}
-	}
 
 ### Goebbels Successor ###
 shared_focus = {
