@@ -1,0 +1,321 @@
+focus_tree = {
+	id = jgr-focus-tree-gcw
+	continuous_focus_position = { x = -40 y = 1050 } 
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = JGR
+		}
+	}
+	#Jewish hunting
+	focus = {
+		id = JGR_jewish_hunting
+		icon = GFX_JGR_jewish_hunting-325317
+		x = 7
+		y = 2
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = JGR_unfair_distribution_of_property  }
+		completion_reward = {
+			add_stability = -0.2
+			add_war_support = 0.2
+		}
+	}
+
+	#unfair distribution of property
+	focus = {
+		id = JGR_unfair_distribution_of_property
+		icon = GFX_JGR_unfair_distribution_of_property-325234
+		x = 5
+		y = 1
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = JGR_gotterdammerung  }
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.05
+			add_equipment_to_stockpile = {
+			    type = infantry_equipment
+			    amount = 3000
+			    producer = JGR
+			}
+		}
+	}
+
+	#Götterdämmerung
+	focus = {
+		id = JGR_gotterdammerung
+		icon = GFX_goal_unknown
+		x = 6
+		y = 0
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#Securing Public Support
+	focus = {
+		id = JGR_securing_public_support
+		icon = GFX_JGR_securing_public_support-325253
+		x = 2
+		y = 1
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = JGR_gotterdammerung  }
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+
+	#Realization of Justice
+	focus = {
+		id = JGR_realization_of_justice
+		icon = GFX_JGR_realization_of_justice-325262
+		x = 0
+		y = 2
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = JGR_securing_public_support  }
+		completion_reward = {
+			add_war_support = 0.05
+			add_manpower = -3000
+			
+		}
+	}
+
+	#Handling of Traitors
+	focus = {
+		id = JGR_handling_of_traitors
+		icon = GFX_JGR_handling_of_traitors-325265
+		x = 2
+		y = 3
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = JGR_securing_public_support  }
+		completion_reward = {
+			add_war_support = 0.05
+			add_manpower = -6000
+			add_equipment_to_stockpile = {
+			    type = infantry_equipment
+			    amount = 5000
+			    producer = JGR
+			}
+		}
+	}
+
+	#Cutting out rotten branches
+	focus = {
+		id = JGR_cutting_out_rotten_branches
+		icon = GFX_JGR_cutting_out_rotten_branches-325267
+		x = 2
+		y = 4
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = JGR_handling_of_traitors  }
+		completion_reward = {
+			add_manpower = -30000
+			add_equipment_to_stockpile = {
+			    type = infantry_equipment
+			    amount = 1000
+			    producer = JGR
+			}
+			
+		}
+	}
+
+	#Miracle Man
+	focus = {
+		id = JGR_miracle_man
+		icon = GFX_JGR_miracle_man-325286
+		x = 5
+		y = 2
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = JGR_securing_public_support  }
+		select_effect = {
+add_war_support = 0.05
+add_stability = 0.1
+add_manpower = 10000
+}
+	}
+
+	#German savior
+	focus = {
+		id = JGR_german_savior
+		icon = GFX_JGR_german_savior-325294
+		x = 5
+		y = 3
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = JGR_miracle_man  }
+		completion_reward = {
+			add_popularity = {
+			    ideology = national_socialism
+			    popularity = 0.1
+			}
+			add_stability = 0.1
+		}
+	}
+
+	#faith
+	focus = {
+		id = JGR_faith
+		icon = GFX_JGR_faith-325310
+		x = 5
+		y = 6
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = JGR_jewish_hunting  } prerequisite = { focus = JGR_cutting_out_rotten_branches  } prerequisite = { focus = JGR_german_savior  }
+	}
+
+	#Hitler's Battle of Youth
+	focus = {
+		id = JGR_hitlersbattleofyouth
+		icon = GFX_JGR_hitlersbattleofyouth-325255
+		x = 9
+		y = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = JGR_gotterdammerung  }
+		completion_reward = {
+			add_war_support = 0.05
+			add_manpower = 100000
+		}
+	}
+
+	#Appointment of Former Defense Force Officers
+	focus = {
+		id = JGR_appointment_of_former_defense_force_officers
+		icon = GFX_goal_unknown
+		x = 9
+		y = 2
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = JGR_hitlersbattleofyouth  }
+		completion_reward = {
+			add_stability = -0.1
+			add_war_support = -0.05
+			swap_ideas = {
+			    remove_idea = less_organized_army_1
+			    add_idea = less_organized_army_2
+			}
+		}
+	}
+
+	#Re-establishment of the hierarchy
+	focus = {
+		id = JGR_reestablishment_of_the_hierarchy
+		icon = GFX_goal_unknown
+		x = 12
+		y = 3
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = JGR_hitlersbattleofyouth  }
+		completion_reward = {
+			add_stability = -0.1
+			swap_ideas = {
+			    remove_idea = less_organized_army_2
+			    add_idea = less_organized_army_3
+			}
+		}
+	}
+
+	#The Journey to the Redemption
+	focus = {
+		id = JGR_the_journey_to_the_redemption
+		icon = GFX_goal_unknown
+		x = 15
+		y = 4
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = JGR_hitlersbattleofyouth  }
+		completion_reward = {
+			add_ideas = fanaticism_1
+		}
+	}
+
+	#Self-Review
+	focus = {
+		id = JGR_selfreview
+		icon = GFX_goal_unknown
+		x = 9
+		y = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = JGR_the_journey_to_the_redemption  focus = JGR_reestablishment_of_the_hierarchy  focus = JGR_appointment_of_former_defense_force_officers  }
+		completion_reward = {
+			swap_ideas = {
+			    remove_idea = fanaticism_1
+			    add_idea = fanaticism_2
+			}
+			
+			
+			
+		}
+	}
+
+	#The Führer's Army
+	focus = {
+		id = JGR_thefuhrersarmy
+		icon = GFX_goal_unknown
+		x = 11
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = JGR_reestablishment_of_the_hierarchy  } prerequisite = { focus = JGR_selfreview  }
+		completion_reward = {
+			add_ideas = new_army
+			
+		}
+	}
+
+	#holy war
+	focus = {
+		id = JGR_holy_war
+		icon = GFX_goal_unknown
+		x = 8
+		y = 8
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = JGR_faith  } prerequisite = { focus = JGR_thefuhrersarmy  }
+		completion_reward = {
+			add_timed_idea = {
+			    idea = iYgVmBTC
+			    days = 40
+			}
+		}
+	}
+
+}

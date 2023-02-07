@@ -1,0 +1,276 @@
+focus_tree = {
+	id = jgr-focus-tree-gcw
+	continuous_focus_position = { x = -40 y = 1050 } 
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = GER
+		}
+	}
+
+### Goebbels Successor ###
+shared_focus = {
+	id = GER_Goebbels
+	icon = GFX_GER_Goebbels
+	cost = 5
+	allow_branch = {
+		has_country_flag = Goebbels_for_germany
+	}
+	bypass = {
+		has_country_flag = Goebbels_for_germany
+	}
+	x = 6
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GER_Goebbels"
+	}
+}
+shared_focus = {
+	id = GER_Public_speaking
+	icon = GFX_YGR_Public_speaking
+	cost = 5
+	prerequisite = {
+		focus = GER_Goebbels
+	}
+	x = 6
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GER_Public_speaking"
+		country_event = {id = Goebbels.10 days = 5}
+		GER_increase_legitimacy_small_Goebbels = yes
+		add_stability = 0.05
+	}
+}
+shared_focus = {
+	id = GER_hitler_faith
+	icon = GFX_GER_hitler_faith
+	cost = 5
+	prerequisite = {
+		focus = GER_Public_speaking
+	}
+	x = 6
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GER_hitler_faith"
+		country_event = {id = Goebbels.20 days = 5}
+		add_stability = 0.10
+	}
+}
+shared_focus = {
+	id = GER_black_propaganda
+	icon = GFX_GER_black_propaganda
+	cost = 5
+	prerequisite = {
+		focus = GER_hitler_faith
+	}
+	x = 8
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GER_black_propaganda"
+		GER_decrease_legitimacy_small_bormann = yes
+		GER_decrease_legitimacy_small_goring = yes	
+		GER_decrease_legitimacy_small_speer = yes	
+		GER_decrease_legitimacy_small_Heydrich = yes		
+	}
+}
+shared_focus = {
+	id = GER_traitor_Bormann
+	icon = GFX_GER_traitor_Bormann
+	cost = 5
+	prerequisite = {
+		focus = GER_black_propaganda
+	}
+	x = 9
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GER_traitor_Bormann"
+		country_event = {id = Goebbels.30 days = 5}		
+		GER_decrease_legitimacy_large_bormann = yes
+	}
+}
+shared_focus = {
+	id = GER_pig_goering
+	icon = GFX_GER_pig_goering
+	cost = 5
+	prerequisite = {
+		focus = GER_traitor_Bormann
+	}
+	x = 9
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GER_pig_goering"
+		country_event = {id = Goebbels.40 days = 5}		
+		GER_decrease_legitimacy_large_goring = yes
+	}
+}
+shared_focus = {
+	id = GER_comrade_speer
+	icon = GFX_GER_comrade_speer
+	cost = 5
+	prerequisite = {
+		focus = GER_black_propaganda
+	}
+	x = 7
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GER_comrade_speer"
+		country_event = {id = Goebbels.50 days = 5}		
+		GER_decrease_legitimacy_large_speer = yes
+	}
+}
+shared_focus = {
+	id = GER_rebel_Heydrich
+	icon = GFX_GER_rebel_Heydrich
+	cost = 5
+	prerequisite = {
+		focus = GER_comrade_speer
+	}
+	x = 7
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GER_rebel_Heydrich"
+		country_event = {id = Goebbels.60 days = 5}		
+		GER_decrease_legitimacy_large_Heydrich = yes
+	}
+}
+shared_focus = {
+	id = GER_true_understander
+	icon = GFX_GER_true_understander
+	cost = 5
+	prerequisite = {
+		focus = GER_rebel_Heydrich
+	}
+	prerequisite = {
+		focus = GER_pig_goering
+	}	
+	x = 8
+	y = 7
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GER_true_understander"
+		country_event = {id = Goebbels.70 days = 5}		
+		GER_increase_legitimacy_large_Goebbels = yes
+	}
+}
+shared_focus = {
+	id = GER_public_contact
+	icon = GFX_GER_public_contact
+	cost = 5
+	prerequisite = {
+		focus = GER_hitler_faith
+	}
+	x = 4
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GER_public_contact"
+		GER_increase_legitimacy_large_Goebbels = yes
+	}
+}
+shared_focus = {
+	id = GER_speech_at_the_German_Workers_Front
+	icon = GFX_GER_speech_at_the_German_Workers_Front
+	cost = 5
+	prerequisite = {
+		focus = GER_public_contact
+	}
+	x = 3
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GER_speech_at_the_German_Workers_Front"
+		country_event = {id = Goebbels.80 days = 5}	
+		GER_increase_legitimacy_large_Goebbels = yes
+		GER_decrease_legitimacy_small_Speer = yes	
+		GER_decrease_legitimacy_small_Bormann = yes	
+		TNO_improve_minimum_wage_policy_effectiveness_low = yes
+		TNO_improve_minimum_max_workhours_policy_effectiveness_low = yes
+		TNO_improve_pensions_policy_effectiveness_low = yes
+		TNO_improve_unemployment_policy_effectiveness_low = yes			
+	}
+}
+shared_focus = {
+	id = GER_Life_of_Dr_Goebbels
+	icon = GFX_GER_Life_of_Dr_Goebbels
+	cost = 5
+	prerequisite = {
+		focus = GER_speech_at_the_German_Workers_Front
+	}
+	x = 3
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GER_Life_of_Dr_Goebbels"
+		country_event = {id = Goebbels.90 days = 5}	
+		GER_increase_legitimacy_small_Goebbels = yes	
+	}
+}
+
+shared_focus = {
+	id = GER_national_guard
+	icon = GFX_GER_national_guard
+	cost = 5
+	prerequisite = {
+		focus = GER_public_contact
+	}
+	x = 5
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GER_national_guard"
+		add_ideas = National_Guard
+		TNO_improve_draft_exemptions_policy_effectiveness_low = yes			
+	}
+}
+
+shared_focus = {
+	id = GER_the_Hitler_Youth_Corps
+	icon = GFX_GER_the_Hitler_Youth_Corps
+	cost = 5
+	prerequisite = {
+		focus = GER_national_guard
+	}
+	x = 5
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GER_the_Hitler_Youth_Corps"	
+		country_event = {id = Goebbels.110 days = 5}			
+		add_political_power = 150	
+		TNO_improve_training_policy_effectiveness_low = yes		
+	}
+}
+
+shared_focus = {
+	id = GER_Hitler_True_Successor
+	icon = GFX_GER_Hitler_True_Successor
+	cost = 5
+	prerequisite = {
+		focus = GER_the_Hitler_Youth_Corps		
+	}
+	prerequisite = {
+		focus = GER_Life_of_Dr_Goebbels
+	}		
+	x = 4
+	y = 7
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GER_Hitler_True_Successor"	
+		country_event = {id = Goebbels.120 days = 5}			
+		GER_increase_legitimacy_small_Goebbels = yes	
+		add_political_power = 70		
+	}
+}
+
+shared_focus = {
+	id = GER_beginning_of_new_national_revolution
+	icon = GFX_GER_beginning_of_new_national_revolution
+	cost = 5
+	prerequisite = {
+		focus = GER_Hitler_True_Successor	
+	}
+	prerequisite = {
+		focus = GER_true_understander
+	}		
+	x = 6
+	y = 8
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GER_beginning_of_new_national_revolution"	
+		country_event = {id = Goebbels.130 days = 5}			
+		add_political_power = 150
+	}
+}
