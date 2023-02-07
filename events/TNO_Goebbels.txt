@@ -60,6 +60,9 @@ country_event = {
 		country_event = {
 			id = Goebbels.11 days = 0
 		}
+		hidden_effect = {
+			load_oob = JGR_oob_1
+		}
 	}
 }
 
