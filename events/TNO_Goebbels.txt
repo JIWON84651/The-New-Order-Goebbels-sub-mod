@@ -319,7 +319,7 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event Goebbels.111"}
 	title = Goebbels.111.t
 	desc = Goebbels.111.desc
-	picture = GFX_Joseph_Goebbels_speech
+	picture = GFX_nazi_eagle
 
 	fire_only_once = yes
 	is_triggered_only = yes
