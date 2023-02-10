@@ -1032,7 +1032,7 @@ country_event = {
 
 	option = {
 		name = reich.25.a
-		hidden_effect = { country_event = { id = reich.2130 days = 1 } }
+		hidden_effect = { country_event = { id = Goebbels.140 days = 1 } }
 	}
 }
 
