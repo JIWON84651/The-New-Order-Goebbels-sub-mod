@@ -8,7 +8,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/GFX_JGR_arrest_officer.dds"
 	}
 	SpriteType = {
-		name = "GFX_YGR_Public_speaking"
+		name = "GFX_GER_Public_speaking"
 		texturefile = "gfx/interface/goals/Public_speaking.dds"
 	}		
 	SpriteType = {

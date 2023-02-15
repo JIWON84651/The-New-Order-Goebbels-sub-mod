@@ -22,6 +22,7 @@ focus_tree = {
 		completion_reward = {
 			add_stability = -0.2
 			add_war_support = 0.2
+		    country_event = {id = Goebbels.220 days = 5}			
 		}
 	}
 
@@ -89,7 +90,7 @@ focus_tree = {
 		completion_reward = {
 			add_war_support = 0.05
 			add_manpower = -3000
-			
+		    country_event = {id = Goebbels.200 days = 5}			
 		}
 	}
 
@@ -111,6 +112,7 @@ focus_tree = {
 			    type = infantry_equipment
 			    amount = 5000
 			    producer = JGR
+		        country_event = {id = Goebbels.210 days = 5}				
 			}
 		}
 	}
@@ -170,6 +172,7 @@ add_manpower = 10000
 			add_popularity = {
 			    ideology = national_socialism
 			    popularity = 0.1
+		        country_event = {id = Goebbels.230 days = 5}
 			}
 			add_stability = 0.1
 		}
@@ -258,6 +261,7 @@ add_manpower = 10000
 		prerequisite = { focus = JGR_hitlersbattleofyouth  }
 		completion_reward = {
 			add_ideas = fanaticism_1
+		    country_event = {id = Goebbels.240 days = 5}
 		}
 	}
 
@@ -275,6 +279,7 @@ add_manpower = 10000
 			swap_ideas = {
 			    remove_idea = fanaticism_1
 			    add_idea = fanaticism_2
+		        country_event = {id = Goebbels.250 days = 5}
 			}
 			
 			
