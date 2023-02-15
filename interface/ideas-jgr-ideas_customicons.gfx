@@ -1,0 +1,45 @@
+spriteTypes = { 
+	##Icon For: less organized army 1
+	SpriteType = { 
+		name = "GFX_idea_less_organized_army_1-325730"
+		texturefile = "gfx/interface/ideas/jgr-ideas-ideas/less_organized_army_1-325730.dds"
+	}
+
+	##Icon For: less organized army 2
+	SpriteType = { 
+		name = "GFX_idea_less_organized_army_2-325731"
+		texturefile = "gfx/interface/ideas/jgr-ideas-ideas/less_organized_army_2-325731.dds"
+	}
+
+	##Icon For: less organized army 3
+	SpriteType = { 
+		name = "GFX_idea_less_organized_army_3-325732"
+		texturefile = "gfx/interface/ideas/jgr-ideas-ideas/less_organized_army_3-325732.dds"
+	}
+
+	##Icon For: fanaticism 1
+	SpriteType = { 
+		name = "GFX_idea_fanaticism_1-1533"
+		texturefile = "gfx/interface/ideas/jgr-ideas-ideas/fanaticism_1-1533.dds"
+	}
+
+	##Icon For: fanaticism 2
+	SpriteType = { 
+		name = "GFX_idea_fanaticism_2-1533"
+		texturefile = "gfx/interface/ideas/jgr-ideas-ideas/fanaticism_2-1533.dds"
+	}
+
+	##Icon For: new army
+	SpriteType = { 
+		name = "GFX_idea_new_army-325734"
+		texturefile = "gfx/interface/ideas/jgr-ideas-ideas/new_army-325734.dds"
+	}
+
+	##Icon For: holy war
+	SpriteType = { 
+		name = "GFX_idea_iYgVmBTC-325735"
+		texturefile = "gfx/interface/ideas/jgr-ideas-ideas/iYgVmBTC-325735.dds"
+	}
+
+ 
+ }

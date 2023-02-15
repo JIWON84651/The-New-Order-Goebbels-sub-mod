@@ -1,0 +1,85 @@
+spriteTypes = { 
+	SpriteType = {
+		name = "GFX_JGR_road_salvation"
+		texturefile = "gfx/interface/goals/GFX_JGR_road_salvation.dds"
+	}
+	SpriteType = {
+		name = "GFX_JGR_arrest_officer"
+		texturefile = "gfx/interface/goals/GFX_JGR_arrest_officer.dds"
+	}
+	SpriteType = {
+		name = "GFX_YGR_Public_speaking"
+		texturefile = "gfx/interface/goals/Public_speaking.dds"
+	}		
+	SpriteType = {
+		name = "GFX_GER_beginning_of_new_national_revolution"
+		texturefile = "gfx/interface/goals/GFX_GER_beginning_of_new_national_revolution.dds"
+	}	
+	SpriteType = {
+		name = "GFX_GER_Hitler_True_Successor"
+		texturefile = "gfx/interface/goals/GFX_GER_Hitler_True_Successor.dds"
+	}	
+	SpriteType = {
+		name = "GFX_GER_the_Hitler_Youth_Corps"
+		texturefile = "gfx/interface/goals/GFX_GER_the_Hitler_Youth_Corps.dds"
+	}	
+	SpriteType = {
+		name = "GFX_GER_national_guard"
+		texturefile = "gfx/interface/goals/GFX_GER_national_guard.dds"
+	}	
+	SpriteType = {
+		name = "GFX_GER_Life_of_Dr_Goebbels"
+		texturefile = "gfx/interface/goals/GFX_GER_Life_of_Dr_Goebbels.dds"
+	}	
+	SpriteType = {
+		name = "GFX_GER_speech_at_the_German_Workers_Front"
+		texturefile = "gfx/interface/goals/GFX_GER_speech_at_the_German_Workers_Front.dds"
+	}	
+	SpriteType = {
+		name = "GFX_GER_public_contact"
+		texturefile = "gfx/interface/goals/GFX_GER_public_contact.dds"
+	}	
+	SpriteType = {
+		name = "GFX_GER_true_understander"
+		texturefile = "gfx/interface/goals/GFX_GER_true_understander.dds"
+	}	
+	SpriteType = {
+		name = "GFX_GER_rebel_Heydrich"
+		texturefile = "gfx/interface/goals/GFX_GER_rebel_Heydrich.dds"
+	}	
+	SpriteType = {
+		name = "GFX_GER_comrade_speer"
+		texturefile = "gfx/interface/goals/GFX_GER_comrade_speer.dds"
+	}	
+	SpriteType = {
+		name = "GFX_GER_pig_goering"
+		texturefile = "gfx/interface/goals/GFX_GER_pig_goering.dds"
+	}	
+	SpriteType = {
+		name = "GFX_GER_traitor_Bormann"
+		texturefile = "gfx/interface/goals/GFX_GER_traitor_Bormann.dds"
+	}	
+	SpriteType = {
+		name = "GFX_GER_black_propaganda"
+		texturefile = "gfx/interface/goals/GFX_GER_black_propaganda.dds"
+	}	
+	SpriteType = {
+		name = "GFX_GER_hitler_faith"
+		texturefile = "gfx/interface/goals/GFX_GER_hitler_faith.dds"
+	}	
+	SpriteType = {
+		name = "GFX_GER_Goebbels"
+		texturefile = "gfx/interface/goals/GFX_GER_Goebbels.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_german_Public_speaking"
+		texturefile = "gfx/interface/goals/GFX_GER_german_Public_speaking.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_affairs_of_national_assembly"
+		texturefile = "gfx/interface/goals/GFX_KOM_affairs_of_national_assembly.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_strike_down_mephistopheles"
+		texturefile = "gfx/interface/goals/GFX_KOM_strike_down_mephistopheles.dds"
+	}

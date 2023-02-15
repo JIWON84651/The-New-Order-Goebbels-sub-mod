@@ -412,7 +412,10 @@ country_event = {
 
 	option = {
 		name = Goebbels.142.a
-	}
+		country_event = {
+			id = reich.564 days = 5	
+	    }
+    }
 }
 
 country_event = { 
@@ -543,17 +546,17 @@ country_event = {
 }
 
 country_event = { 
-	id = Goebbels.220
-	immediate = {log = "[GetDateText]: [Root.GetName]: event Goebbels.220"}
-	title = Goebbels.220.t
-	desc = Goebbels.220.desc
+	id = Goebbels.210
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Goebbels.210"}
+	title = Goebbels.210.t
+	desc = Goebbels.210.desc
 	picture = GFX_conflict_mind
 
 	fire_only_once = yes
 	is_triggered_only = yes
 
 	option = {
-		name = Goebbels.220.a
+		name = Goebbels.210.a
 
 	}
 }

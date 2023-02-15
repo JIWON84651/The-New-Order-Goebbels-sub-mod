@@ -18,7 +18,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = GER_Public_speaking
-	icon = GFX_YGR_Public_speaking
+	icon = GFX_JGR_Public_speaking
 	cost = 5
 	prerequisite = {
 		focus = GER_Goebbels

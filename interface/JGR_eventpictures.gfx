@@ -1,0 +1,122 @@
+spriteTypes = {
+### goebbels EVENTS###
+   	spriteType = {
+		name = "GFX_conflict_mind"
+		texturefile = "gfx/event_pictures/GFX_conflict_mind.dds"               
+	} 
+   	spriteType = {
+		name = "GFX_wish_list"
+		texturefile = "gfx/event_pictures/GFX_wish_list.dds"               
+	} 
+   	spriteType = {
+		name = "GFX_no_person"
+		texturefile = "gfx/event_pictures/GFX_no_person.dds"               
+	} 
+   	spriteType = {
+		name = "GFX_jew_hate"
+		texturefile = "gfx/event_pictures/GFX_jew_hate.dds"               
+	} 
+   	spriteType = {
+		name = "GFX_hitler_speech"
+		texturefile = "gfx/event_pictures/GFX_hitler_speech.dds"               
+	} 
+   	spriteType = {
+		name = "GFX_cruel_justice"
+		texturefile = "gfx/event_pictures/GFX_cruel_justice.dds"               
+	} 
+    spriteType = {
+		name = "GFX_little_light"
+		texturefile = "gfx/event_pictures/GFX_little_light.dds"               
+	}
+   	spriteType = {
+		name = "GFX_eat_man"
+		texturefile = "gfx/event_pictures/GFX_eat_man.dds"               
+	}   
+   	spriteType = {
+		name = "GFX_heavenly_faith"
+		texturefile = "gfx/event_pictures/GFX_heavenly_faith.dds"               
+	}   
+   	spriteType = {
+		name = "GFX_dead_hero_wins"
+		texturefile = "gfx/event_pictures/GFX_dead_hero_wins.dds"               
+	}   
+   	spriteType = {
+		name = "GFX_hero_in_mind_wins"
+		texturefile = "gfx/event_pictures/GFX_hero_in_mind_wins.dds"               
+	}   
+   	spriteType = {
+		name = "GFX_mad_knight_wins"
+		texturefile = "gfx/event_pictures/GFX_mad_knight_wins.dds"               
+	}   
+    spriteType = {
+		name = "GFX_nazi_eagle"
+		texturefile = "gfx/event_pictures/GFX_nazi_eagle.dds"               
+	}   
+    spriteType = {
+		name = "GFX_Joseph_Goebbels_hellfire"
+		texturefile = "gfx/event_pictures/GFX_Joseph_Goebbels_hellfire.dds"               
+	}   
+  	spriteType = {
+		name = "GFX_sad_jesus"
+		texturefile = "gfx/event_pictures/GFX_sad_jesus.dds"               
+	}   
+  	spriteType = {
+		name = "GFX_Salvation"
+		texturefile = "gfx/event_pictures/GFX_Salvation.dds"               
+	}   
+    spriteType = {
+		name = "GFX_sad_person"
+		texturefile = "gfx/event_pictures/GFX_sad_person.dds"               
+	}  
+    spriteType = {
+		name = "GFX_heavenly_hellish_light"
+		texturefile = "gfx/event_pictures/GFX_heavenly_hellish_light.dds"               
+	} 
+  	spriteType = {
+		name = "GFX_trust_him"
+		texturefile = "gfx/event_pictures/GFX_trust_him.dds"               
+	} 
+  	spriteType = {
+		name = "GFX_german_utopia"
+		texturefile = "gfx/event_pictures/GFX_german_utopia.dds"               
+	} 
+  	spriteType = {
+		name = "GFX_german_Phoenix"
+		texturefile = "gfx/event_pictures/GFX_german_Phoenix.dds"               
+	} 
+  	spriteType = {
+		name = "GFX_german_corruption"
+		texturefile = "gfx/event_pictures/GFX_german_corruption.dds"               
+	} 
+  	spriteType = {
+		name = "GFX_superman"
+		texturefile = "gfx/event_pictures/GFX_superman.dds"               
+	} 
+  	spriteType = {
+		name = "GFX_praying_hands"
+		texturefile = "gfx/event_pictures/GFX_praying_hands.dds"               
+	} 
+  	spriteType = {
+		name = "GFX_Goebbels_family"
+		texturefile = "gfx/event_pictures/GFX_Goebbels_family.dds"               
+	} 
+    spriteType = {
+		name = "GFX_god_hitler"
+		texturefile = "gfx/event_pictures/GFX_god_hitler.dds"               
+	}
+  	spriteType = {
+		name = "GFX_Eden_expulsion"
+		texturefile = "gfx/event_pictures/GFX_Eden_expulsion.dds"               
+	}
+  	spriteType = {
+		name = "GFX_Joseph_Goebbels_workers"
+		texturefile = "gfx/event_pictures/GFX_Joseph _Goebbels_ workers.dds"               
+	}
+  	spriteType = {
+		name = "GFX_Joseph_Goebbels_speech"
+		texturefile = "gfx/event_pictures/GFX_Joseph_Goebbels_speech.dds"               
+	}
+  	spriteType = {
+		name = "GFX_Joseph_Goebbels_intro"
+		texturefile = "gfx/event_pictures/GFX_Joseph_Goebbels_intro.dds"                
+	}
